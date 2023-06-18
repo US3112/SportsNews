@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply</title>
+  <link rel="stylesheet" href="apply.css">
+  <style>
+    /* Align form boxes uniformly */
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    form label {
+      text-align: left;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+      width: auto;
+      background-color: purple;
+      color: white;
+    }
+
+    /* Align checkboxes in the same line */
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Apply Now</h1>
+  </div>
+  <div class="container">
+    <div class="segment">
+      <h2>Personal Information</h2>
+      <div class="subsegment">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label>Gender:</label>
+          <div class="checkbox-group">
+            <label for="male">
+              <input type="radio" id="male" name="gender" value="male">
+              Male
+            </label>
+            <label for="female">
+              <input type="radio" id="female" name="gender" value="female">
+              Female
+            </label>
+            <label for="others">
+              <input type="radio" id="others" name="gender" value="others">
+              Others
+            </label>
+          </div>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="role">Role:</label>
+          <select id="role" name="role" required>
+            <option value="">Select a role</option>
+            <option value="Editor">Editor</option>
+            <option value="CEO">CEO</option>
+            <option value="Writer">Writer</option>
+            <option value="Web-Developer">Web Developer</option>
+            <option value="Photographer">Photographer</option>
+          </select>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="back-btn">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>

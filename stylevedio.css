@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real Madrid Vs Barcelona</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Reddit-inspired Title Theme */
+    .header {
+      background-color: #EF0107; /* Arsenal FC red */
+      color: #FFFFFF;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    /* YouTube-inspired Segment Theme */
+    .segment {
+      margin-bottom: 40px;
+      background-color: #EF0107; /* Arsenal FC red */
+      border-radius: 5px;
+      padding: 20px;
+      opacity: 0.9;
+    }
+
+    .segment h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+
+    /* Multi-colored Subsegments with 50% Transparency and White Borders */
+    .subsegment {
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 4px solid #FFFFFF; /* Updated border width */
+      transition: background-color 0.3s ease;
+    }
+
+    .subsegment:nth-child(odd) {
+      background-color: rgba(255, 255, 255, 0.7); /* Lighter shade */
+    }
+
+    .subsegment:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.6); /* Light shade */
+    }
+
+    .subsegment:nth-child(3n) {
+      background-color: rgba(255, 255, 255, 0.8); /* Lightest shade */
+    }
+
+    .subsegment:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .subsegment h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+
+    .subsegment p {
+      margin: 0;
+      color: #666666;
+    }
+
+    .subsegment a {
+      color: #333333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Image Background in Subsegment */
+    .subsegment.image-background {
+      background-image: url("https://mobcup.net/wallpaper/cristiano-ronaldo-al-nassr-fc-pnl523m0");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Adjust Transparency for Image Background Subsegment */
+    .subsegment.image-background {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Hover Effect for Subsegment */
+    .subsegment:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Light-colored Paragraph Background */
+    .segment p {
+      background-color: rgba(255, 255, 255, 0.7); /* Lighter shade */
+      padding: 10px;
+    }
+
+    /* Blue Box for Back to Home Button */
+    .back-btn {
+      background-color: blue;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .back-btn a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Real Madrid Vs Barcelona</h1>
+  </div>
+  <div class="container">
+    <div class="segment">
+      <h2></h2>
+      <div class="subsegment">
+        <h3></h3>
+        <p>Date - 18th June 2023<br>Time - 18:00</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JGVBv7svKLo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+     </div>
+  </div>
+  <div class="back-btn">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
